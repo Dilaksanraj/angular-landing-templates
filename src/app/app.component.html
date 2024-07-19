@@ -28,12 +28,12 @@
     </div>
 </nav>
 <header class="absolute w-full z-40">
-    <div class="bg-slate-800 hidden lg:block">
+    <div class="bg-yellow-500 hidden lg:block">
         <div class="container text-white py-2">
             <ul class="flex justify-between">
-                <li>
-                    All course 28% off for <span class="text-emerald-500">Liberian people’s.</span>
-                </li>
+                <!-- <li>
+                    All course 28% off for <span class="text-magenta-500">Liberian people’s.</span>
+                </li> -->
                 <li>
                     <img src="../assets/shapes/shape-1.webp" alt="">
                 </li>
@@ -53,11 +53,11 @@
         </div>
     </div>
     <div
-        class="px-5 {{isMenuScrolled?'fixed top-0 w-full bg-white shadow-xl animate-slideInDown animate-faster':'pt-10'}}">
+        class="px-5 {{isMenuScrolled?'fixed top-0 w-full bg-magenta-400 shadow-xl animate-slideInDown animate-faster':'pt-10'}}">
         <div
-            class="py-5 flex items-center justify-between container {{isMenuScrolled?'':'border'}} border-emerald-500 border-opacity-30 rounded-xl">
+            class="py-5 flex items-center justify-between container {{isMenuScrolled?'':'border'}} border-magenta-400 border-opacity-100 rounded-xl">
             <a href="">
-                <img src="../assets/logo.png" alt="">
+                <img src="../assets/logo.png" alt="" class="w-20" >
             </a>
             <div class="lg:hidden">
                 <svg (click)="this.openSideBar()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -67,14 +67,14 @@
                 </svg>
             </div>
             <app-menu class="hidden lg:block"></app-menu>
-            <app-auth-links class="hidden lg:block"></app-auth-links>
+            <!-- <app-auth-links class="hidden lg:block"></app-auth-links> -->
         </div>
     </div>
 </header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
 <button *ngIf="isMenuScrolled" (click)="scrollToTop()"
-    class="flex text-white transition-all duration-300 fixed bottom-5 right-5 w-10 h-10 bg-emerald-600 hover:bg-slate-800 rounded-full">
+    class="flex text-white transition-all duration-300 fixed bottom-5 right-5 w-10 h-10 bg-magenta-600 hover:bg-slate-800 rounded-full">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"
         class="w-6 h-6 m-auto">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />

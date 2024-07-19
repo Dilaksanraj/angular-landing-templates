@@ -12,16 +12,19 @@ export class ClientsComponent implements OnInit {
 
   slideConfig = new SlideConfig()
 
-  clients!:Client[];
+  clients:Client[] = [];
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient:HttpClient) {
+    this.getAllClients()
+  }
 
   ngOnInit(): void {
+
     this.slideConfig.breakpoints = {sm:1,md:2,lg:3,xl:5};
     this.slideConfig.showDots=false;
     this.slideConfig.showLeftRightArrow = false;
     this.slideConfig.autoPlay = true;
-    this.getAllClients()
+
   }
 
   getAllClients() {
