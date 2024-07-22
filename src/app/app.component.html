@@ -1,6 +1,6 @@
 <nav class="absolute w-full top-0 left-0 h-screen z-50 {{isSidebarShowing?'flex':'hidden'}}">
     <div class=" bg-digiYellow w-full md:max-w-sm shadow-2xl">
-        <div class="flex justify-end p-5">
+        <div class="flex justify-end p-5 text-digiCyan">
             <svg (click)="this.closeSideBar()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                 stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m-15 0l15 15" />
@@ -55,12 +55,12 @@
     <div
         class="px-5 {{isMenuScrolled?'fixed top-0 w-full bg-digiMagenta shadow-xl animate-slideInDown animate-faster':'pt-10'}}">
         <div
-            class="flex items-center justify-between container {{isMenuScrolled?'':'border'}} border-digiMagenta border-opacity-100 rounded-2xl">
+            class="flex items-center justify-between container text-digiYellow {{isMenuScrolled?'':'border'}} border-digiMagenta border-opacity-100 rounded-2xl">
             <a href="">
                 <img src="../assets/logo.png" alt="" class="w-20" >
             </a>
             <div class="lg:hidden">
-                <svg (click)="this.openSideBar()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                <svg class="text-digiYellow" (click)="this.openSideBar()" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                     stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
