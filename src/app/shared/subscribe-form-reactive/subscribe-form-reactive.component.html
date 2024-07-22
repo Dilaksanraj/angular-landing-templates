@@ -1,7 +1,7 @@
 <form [formGroup]="subscribeForm" (ngSubmit)="submit()">
     <!-- pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" -->
-    <input formControlName="email" class="mt-4 w-full p-3 border border-emerald-800 border-opacity-20 rounded-lg">
-    <!-- <input formControlName="phone" type="number" class="mt-4 w-full p-3 border border-emerald-800 border-opacity-20 rounded-lg"> -->
+    <input formControlName="email" class="mt-4 w-full p-3 border border-digiCyan border-opacity-20 rounded-lg">
+    <!-- <input formControlName="phone" type="number" class="mt-4 w-full p-3 border border-digiCyan border-opacity-20 rounded-lg"> -->
 
     <span class="text-red-600" *ngIf="subscribeForm.controls['email'].dirty && !subscribeForm.controls['email'].valid">Invalid Email ID</span>
 

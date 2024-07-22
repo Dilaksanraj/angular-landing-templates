@@ -37,6 +37,15 @@ module.exports = AnimateCSS({
           '800': '#660066',
           '900': '#330033',
         },
+        digiYellow:{
+          DEFAULT:'#feff01'
+        },
+        digiCyan:{
+          DEFAULT:'#04c5fe'
+        },
+        digiMagenta:{
+          DEFAULT:'#fe238a'
+        }
       },
     },
   },

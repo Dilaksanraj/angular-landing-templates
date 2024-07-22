@@ -1,6 +1,6 @@
 <form #subscribeForm="ngForm" (ngSubmit)="submit(subscribeForm)">
 
-    <input required [(ngModel)]="email" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" name="email" type="email" class="mt-4 w-full p-3 border border-emerald-800 border-opacity-20 rounded-lg">
+    <input required [(ngModel)]="email" pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$" name="email" type="email" class="mt-4 w-full p-3 border border-digiCyan border-opacity-20 rounded-lg">
 
     <span class="text-red-600" *ngIf="subscribeForm.controls['email'].dirty && !subscribeForm.controls['email'].valid">Invalid Email ID</span>
 
